@@ -12,8 +12,12 @@
   "contributes": {
     "snippets": [
       {
-        "language": "typescript",
-        "path": "./snippets/snippets.code-snippets"
+        "language": "javascript",
+        "path": "./snippets/js.code-snippets"
+      },
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/js.code-snippets"
       }
     ]
   }
