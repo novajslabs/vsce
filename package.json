@@ -3,7 +3,7 @@
   "publisher": "novajs",
   "displayName": "Nova.js",
   "description": "Add carefully developed and dependency-free React hooks to your project",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "license": "MIT",
   "engines": {
     "vscode": "^1.75.0"
