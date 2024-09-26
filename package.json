@@ -19,12 +19,12 @@
   ],
   "icon": "images/icon.png",
   "galleryBanner": {
-    "color": "#818cf8",
+    "color": "#1b1b1f",
     "theme": "dark"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/novajs/vsc-extension"
+    "url": "https://github.com/novajs/vsce"
   },
   "author": "Daniel Castillo <daniel@dlcastillop.com>",
   "contributes": {
