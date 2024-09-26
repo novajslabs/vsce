@@ -1,14 +1,32 @@
 {
-  "name": "nova-js",
+  "name": "nova-js-vsce",
+  "publisher": "novajs",
   "displayName": "Nova.js",
-  "description": "",
+  "description": "Add carefully developed and dependency-free React hooks to your project",
   "version": "0.0.1",
+  "license": "MIT",
   "engines": {
-    "vscode": "^1.93.0"
+    "vscode": "^1.75.0"
   },
   "categories": [
     "Snippets"
   ],
+  "keywords": [
+    "react",
+    "hooks",
+    "javascript",
+    "typescript"
+  ],
+  "icon": "images/icon.png",
+  "galleryBanner": {
+    "color": "#1b1b1f",
+    "theme": "dark"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/novajs/vsce"
+  },
+  "author": "Daniel Castillo <daniel@dlcastillop.com>",
   "contributes": {
     "snippets": [
       {
