@@ -4,7 +4,7 @@ A Visual Studio Code Extension to add dependency-free React hooks to your projec
 
 ## Getting started
 
-### Install
+### Installation
 
 Open the extensions sidebar in Visual Studio Code and search for `Nova.js` or install it from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=novajs.nova-js-vsce).
 
@@ -14,7 +14,7 @@ Inside of an existing or new `.js`, `.ts`, `.jsx` or `.tsx` file, type the name 
 
 List of available hooks at [novajs.co/react-hooks](https://novajs.co/react-hooks).
 
-![Usage](/images/usage.gif)
+![Usage](https://novajs.co/vsce-usage.gif)
 
 ## Documentation
 
@@ -31,6 +31,10 @@ You can support this project in several ways:
 ### Star us
 
 Star [this repo](https://github.com/novajslabs/vsce).
+
+### Rate us
+
+Rate this extension on [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=novajs.nova-js-vsce).
 
 ### Share
 
