@@ -24,7 +24,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/novajs/vsce"
+    "url": "https://github.com/novajslabs/vsce"
   },
   "author": "Daniel Castillo <daniel@dlcastillop.com>",
   "contributes": {
