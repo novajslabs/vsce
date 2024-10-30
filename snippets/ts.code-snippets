@@ -1177,8 +1177,8 @@
     "body": [
       "import { useState } from 'react';",
       "",
-      "export const useRandomColor = () => {",
-      "  const [color, setColor] = useState('#000000');",
+      "export const useRandomColor = (initialColor?: string) => {",
+      "  const [color, setColor] = useState(initialColor ?? '#000000');",
       "",
       "  const generateColor = () => {",
       "    const newColor =",
@@ -1562,7 +1562,7 @@
       "  }",
       "",
       "  return { title, changeTitle };",
-      "};",
+      "};"
     ],
     "description": "React hook to change the page title"
   },
