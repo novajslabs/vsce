@@ -1838,5 +1838,28 @@
       "};"
     ],
     "description": "React hook to handle async operations"
+  },
+  "useDeviceOrientation": {
+    "prefix": "useDeviceOrientation",
+    "body": [
+      "import { useSyncExternalStore } from 'react';",
+      "",
+      "const orientationSubscribe = (cb: () => void) => {",
+      "  window.addEventListener('orientationchange', cb);",
+      "  return () => window.removeEventListener('orientationchange', cb);",
+      "};",
+      "",
+      "const getOrientation = () => {",
+      "  return {",
+      "    type: window.screen.orientation.type,",
+      "    angle: window.screen.orientation.angle",
+      "  };",
+      "};",
+      "",
+      "export const useDeviceOrientation = () =>",
+      "  useSyncExternalStore(orientationSubscribe, getOrientation);",
+      ""
+    ],
+    "description": "React hook to provide the current orientation of the screen"
   }
 }
