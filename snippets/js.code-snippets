@@ -1056,11 +1056,13 @@
       "    };",
       "",
       "    document.addEventListener('click', handleClickOutside);",
+      "",
       "    return () => {",
       "      document.removeEventListener('click', handleClickOutside);",
       "    };",
       "  }, [ref, fn]);",
-      "};"
+      "};",
+      ""
     ],
     "description": "React hook to detect clicks outside of a specified component"
   },
@@ -1069,9 +1071,9 @@
     "body": [
       "import { useRef } from 'react';",
       "",
-      "export default function usePrevious(value) {",
+      "export const usePrevious = (value) => {",
       "  const currentRef = useRef(value);",
-      "  const previousRef = useRef();",
+      "  const previousRef = useRef(undefined);",
       "",
       "  if (currentRef.current !== value) {",
       "    previousRef.current = currentRef.current;",
@@ -1079,7 +1081,8 @@
       "  }",
       "",
       "  return previousRef.current;",
-      "}"
+      "};",
+      ""
     ],
     "description": "React hook to track the previous value of a variable"
   },
@@ -1700,5 +1703,28 @@
       "};"
     ],
     "description": "React hook to handle async operations"
+  },
+  "useDeviceOrientation": {
+    "prefix": "useDeviceOrientation",
+    "body": [
+      "import { useSyncExternalStore } from 'react';",
+      "",
+      "const orientationSubscribe = (cb) => {",
+      "  window.addEventListener('orientationchange', cb);",
+      "  return () => window.removeEventListener('orientationchange', cb);",
+      "};",
+      "",
+      "const getOrientation = () => {",
+      "  return {",
+      "    type: window.screen.orientation.type,",
+      "    angle: window.screen.orientation.angle",
+      "  };",
+      "};",
+      "",
+      "export const useDeviceOrientation = () =>",
+      "  useSyncExternalStore(orientationSubscribe, getOrientation);",
+      ""
+    ],
+    "description": "React hook to provide the current orientation of the screen"
   }
 }

@@ -1130,10 +1130,10 @@
   "useOutsideClick": {
     "prefix": "useOutsideClick",
     "body": [
-      "import { useEffect, MutableRefObject } from 'react';",
+      "import { useEffect, RefObject } from 'react';",
       "",
       "export const useOutsideClick = (",
-      "  ref: MutableRefObject<HTMLElement | null>,",
+      "  ref: RefObject<HTMLElement | null>,",
       "  fn: () => void",
       ") => {",
       "  useEffect(() => {",
@@ -1149,7 +1149,8 @@
       "      document.removeEventListener('click', handleClickOutside);",
       "    };",
       "  }, [ref, fn]);",
-      "};"
+      "};",
+      ""
     ],
     "description": "React hook to detect clicks outside of a specified component"
   },
@@ -1158,9 +1159,9 @@
     "body": [
       "import { useRef } from 'react';",
       "",
-      "export default function usePrevious<T>(value: T): T | undefined {",
+      "export const usePrevious = <T>(value: T): T | undefined => {",
       "  const currentRef = useRef<T>(value);",
-      "  const previousRef = useRef<T>();",
+      "  const previousRef = useRef<T>(undefined);",
       "",
       "  if (currentRef.current !== value) {",
       "    previousRef.current = currentRef.current;",
@@ -1168,7 +1169,8 @@
       "  }",
       "",
       "  return previousRef.current;",
-      "}"
+      "};",
+      ""
     ],
     "description": "React hook to track the previous value of a variable"
   },
@@ -1838,5 +1840,28 @@
       "};"
     ],
     "description": "React hook to handle async operations"
+  },
+  "useDeviceOrientation": {
+    "prefix": "useDeviceOrientation",
+    "body": [
+      "import { useSyncExternalStore } from 'react';",
+      "",
+      "const orientationSubscribe = (cb: () => void) => {",
+      "  window.addEventListener('orientationchange', cb);",
+      "  return () => window.removeEventListener('orientationchange', cb);",
+      "};",
+      "",
+      "const getOrientation = () => {",
+      "  return {",
+      "    type: window.screen.orientation.type,",
+      "    angle: window.screen.orientation.angle",
+      "  };",
+      "};",
+      "",
+      "export const useDeviceOrientation = () =>",
+      "  useSyncExternalStore(orientationSubscribe, getOrientation);",
+      ""
+    ],
+    "description": "React hook to provide the current orientation of the screen"
   }
 }
