@@ -1130,10 +1130,10 @@
   "useOutsideClick": {
     "prefix": "useOutsideClick",
     "body": [
-      "import { useEffect, MutableRefObject } from 'react';",
+      "import { useEffect, RefObject } from 'react';",
       "",
       "export const useOutsideClick = (",
-      "  ref: MutableRefObject<HTMLElement | null>,",
+      "  ref: RefObject<HTMLElement | null>,",
       "  fn: () => void",
       ") => {",
       "  useEffect(() => {",
@@ -1149,7 +1149,8 @@
       "      document.removeEventListener('click', handleClickOutside);",
       "    };",
       "  }, [ref, fn]);",
-      "};"
+      "};",
+      ""
     ],
     "description": "React hook to detect clicks outside of a specified component"
   },

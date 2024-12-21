@@ -1056,11 +1056,13 @@
       "    };",
       "",
       "    document.addEventListener('click', handleClickOutside);",
+      "",
       "    return () => {",
       "      document.removeEventListener('click', handleClickOutside);",
       "    };",
       "  }, [ref, fn]);",
-      "};"
+      "};",
+      ""
     ],
     "description": "React hook to detect clicks outside of a specified component"
   },
