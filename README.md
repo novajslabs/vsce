@@ -10,15 +10,15 @@ Open the extensions sidebar in Visual Studio Code and search for `Nova.js` or in
 
 ### Usage
 
-Inside of an existing or new `.js`, `.ts`, `.jsx` or `.tsx` file, type the name of the hook you want to use and press Enter.
+Inside of a `.js`, `.ts`, `.jsx` or `.tsx` file, type the name of the hook you want to use and press Enter.
 
-List of available hooks at [novajs.co/react-hooks](https://novajs.co/react-hooks).
+List of available hooks at [novajs.dev/react-hooks](https://novajs.dev/react-hooks).
 
-![Usage](https://novajs.co/vsce-usage.gif)
+![Usage](https://novajs.dev/vsce-usage.gif)
 
 ## Documentation
 
-[novajs.co/visual-studio-code-extension](https://novajs.co/visual-studio-code-extension)
+[novajs.dev/visual-studio-code-extension](https://novajs.dev/visual-studio-code-extension)
 
 ## Questions
 
@@ -38,11 +38,11 @@ Rate this extension on [Visual Studio Marketplace](https://marketplace.visualstu
 
 ### Share
 
-- [LinkedIn](http://www.linkedin.com/shareArticle?mini=true&url=https://novajs.co)
-- [WhatsApp](https://api.whatsapp.com/send?text=https://novajs.co)
-- [Facebook](https://www.facebook.com/sharer/sharer.php?u=https://novajs.co)
-- [X](https://twitter.com/intent/tweet?url=https://novajs.co)
-- [Reddit](https://www.reddit.com/submit?url=https://novajs.co)
+- [LinkedIn](http://www.linkedin.com/shareArticle?mini=true&url=https://marketplace.visualstudio.com/items?itemName=novajs.nova-js-vsce)
+- [WhatsApp](https://api.whatsapp.com/send?text=https://marketplace.visualstudio.com/items?itemName=novajs.nova-js-vsce)
+- [Facebook](https://www.facebook.com/sharer/sharer.php?u=https://marketplace.visualstudio.com/items?itemName=novajs.nova-js-vsce)
+- [X](https://twitter.com/intent/tweet?url=https://marketplace.visualstudio.com/items?itemName=novajs.nova-js-vsce)
+- [Reddit](https://www.reddit.com/submit?url=https://marketplace.visualstudio.com/items?itemName=novajs.nova-js-vsce)
 
 ## License
 
